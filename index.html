@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body>
+<main>
+<div class="container">
+
+  <img src="images/drawers.jpg" alt="drawers" class="container_img">
+  
+  <div class="text_container">
+    <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+    <p>Ever been in a room and felt like something was missing? Perhaps 
+      it felt slightly bare and uninviting. I’ve got some simple tips 
+      to help you make any room feel complete.</p>
+  
+    <div class="author_container">
+
+      <div class="author" id="author"> 
+        <img src="images/avatar-michelle.jpg" alt="avatar">
+        <div class="item">
+          <h2>Michelle Appleton</h2>
+          <p>28 Jun 2020</p>
+        </div>
+      </div>
+
+      <button class="share-button" id="share-button">
+        <img src="images/icon-share.svg" alt="share" />
+      </button>
+    </div>
+
+  <div class="popup_box" id="myPopup">
+    <div class="icons">
+
+      <span class="share">SHARE</span>
+
+      <img src="images/icon-facebook.svg" alt="facebook" class="icon"/>
+      <img src="images/icon-twitter.svg" alt="twitter" class="icon" />
+      <img src="images/icon-pinterest.svg" alt="pinterest" class="icon"/>
+    </div>
+    </div>
+      
+</div>
+</div>
+</main>
+
+<script>
+  // When the user clicks on botton, open the popup
+  let btn = document.getElementById("share-button");
+  let popup = document.getElementById("myPopup");
+  btn.addEventListener("click", () =>{
+  popup.classList.toggle("show");
+  btn.classList.toggle("newStyle");
+  })
+
+</script>
+</script>
+</body>
+</html>
